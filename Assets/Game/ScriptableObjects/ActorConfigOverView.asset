@@ -1,0 +1,95 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0dadbc06f5747d4ebdc3b78278e2ae7, type: 3}
+  m_Name: ActorConfigOverView
+  m_EditorClassIdentifier: 
+  _actorConfigs:
+  - _id: Player
+    _prefab: {fileID: 485338420766304202, guid: a858fa2dd5fa22d47b173a895472ffa4, type: 3}
+    _defaultWeaponConfigId: Fist
+    _statConfigOverView:
+      _statConfigs:
+      - _type: Health
+        _maxValue: 700
+        _prefab: {fileID: 7933595384142269893, guid: c3a51fc5115c3ca418d34de5a4aa3fb4, type: 3}
+      - _type: Poise
+        _maxValue: 1
+        _prefab: {fileID: 0}
+      - _type: Mana
+        _maxValue: 200
+        _prefab: {fileID: 7933595384142269893, guid: bb6062724c94fa64bbff4e01f7ee910a, type: 3}
+  - _id: EA
+    _prefab: {fileID: 1220147570648850291, guid: 00e8acf23e0e5b54e8df74768ba540a3, type: 3}
+    _defaultWeaponConfigId: Fist
+    _statConfigOverView:
+      _statConfigs:
+      - _type: Health
+        _maxValue: 20
+        _prefab: {fileID: 1415327421468904052, guid: e77042ded4583204c853fee070fba9b0, type: 3}
+      - _type: Poise
+        _maxValue: 2
+        _prefab: {fileID: 0}
+  - _id: EB
+    _prefab: {fileID: 1220147570648850291, guid: 00e8acf23e0e5b54e8df74768ba540a3, type: 3}
+    _defaultWeaponConfigId: Dagger
+    _statConfigOverView:
+      _statConfigs:
+      - _type: Health
+        _maxValue: 150
+        _prefab: {fileID: 1415327421468904052, guid: e77042ded4583204c853fee070fba9b0, type: 3}
+      - _type: Poise
+        _maxValue: 60
+        _prefab: {fileID: 0}
+  - _id: EC
+    _prefab: {fileID: 1220147570648850291, guid: 00e8acf23e0e5b54e8df74768ba540a3, type: 3}
+    _defaultWeaponConfigId: Sword
+    _statConfigOverView:
+      _statConfigs:
+      - _type: Health
+        _maxValue: 400
+        _prefab: {fileID: 1415327421468904052, guid: e77042ded4583204c853fee070fba9b0, type: 3}
+      - _type: Poise
+        _maxValue: 90
+        _prefab: {fileID: 0}
+  - _id: ED
+    _prefab: {fileID: 1220147570648850291, guid: 00e8acf23e0e5b54e8df74768ba540a3, type: 3}
+    _defaultWeaponConfigId: Spear
+    _statConfigOverView:
+      _statConfigs:
+      - _type: Health
+        _maxValue: 500
+        _prefab: {fileID: 1415327421468904052, guid: e77042ded4583204c853fee070fba9b0, type: 3}
+      - _type: Poise
+        _maxValue: 100
+        _prefab: {fileID: 0}
+  - _id: EE
+    _prefab: {fileID: 1220147570648850291, guid: 00e8acf23e0e5b54e8df74768ba540a3, type: 3}
+    _defaultWeaponConfigId: Axe
+    _statConfigOverView:
+      _statConfigs:
+      - _type: Health
+        _maxValue: 250
+        _prefab: {fileID: 1415327421468904052, guid: e77042ded4583204c853fee070fba9b0, type: 3}
+      - _type: Poise
+        _maxValue: 1000
+        _prefab: {fileID: 0}
+  - _id: EF
+    _prefab: {fileID: 2083566158776798129, guid: b18e90872c8866c448a538c2b2559bde, type: 3}
+    _defaultWeaponConfigId: GreatSword
+    _statConfigOverView:
+      _statConfigs:
+      - _type: Health
+        _maxValue: 2000
+        _prefab: {fileID: 1415327421468904052, guid: e77042ded4583204c853fee070fba9b0, type: 3}
+      - _type: Poise
+        _maxValue: 500
+        _prefab: {fileID: 0}

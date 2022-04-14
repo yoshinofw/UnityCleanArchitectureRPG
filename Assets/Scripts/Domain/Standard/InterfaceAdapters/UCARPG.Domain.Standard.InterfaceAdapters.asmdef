@@ -1,0 +1,17 @@
+{
+    "name": "UCARPG.Domain.Standard.InterfaceAdapters",
+    "rootNamespace": "UCARPG.Domain.Standard.InterfaceAdapters",
+    "references": [
+        "GUID:39e13b4a4f475ce409d2c2da39ee56c2",
+        "GUID:f9891035b3caa2c43af8437ae5bf5b08"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,0 +1,17 @@
+{
+    "name": "UCARPG.Domain.ActorDomain.UseCases",
+    "rootNamespace": "UCARPG.Domain.ActorDomain.UseCases",
+    "references": [
+        "GUID:39e13b4a4f475ce409d2c2da39ee56c2",
+        "GUID:55aacada10aff0b408e7fbcb797d656f"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

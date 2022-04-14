@@ -1,0 +1,16 @@
+{
+    "name": "UCARPG.Domain.ActorDomain.InterfaceAdapters",
+    "rootNamespace": "UCARPG.Domain.ActorDomain.InterfaceAdapters",
+    "references": [
+        "GUID:98c5c4a3410fe604da3a798927228ed8"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

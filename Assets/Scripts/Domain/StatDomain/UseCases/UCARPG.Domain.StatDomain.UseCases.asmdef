@@ -1,0 +1,17 @@
+{
+    "name": "UCARPG.Domain.StatDomain.UseCases",
+    "rootNamespace": "UCARPG.Domain.StatDomain.UseCases",
+    "references": [
+        "GUID:39e13b4a4f475ce409d2c2da39ee56c2",
+        "GUID:13bb9a16b6795584093d675ba6db2fb3"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

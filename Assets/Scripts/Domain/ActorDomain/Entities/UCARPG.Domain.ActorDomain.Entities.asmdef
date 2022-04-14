@@ -1,0 +1,16 @@
+{
+    "name": "UCARPG.Domain.ActorDomain.Entities",
+    "rootNamespace": "UCARPG.Domain.ActorDomain.Entities",
+    "references": [
+        "GUID:f9891035b3caa2c43af8437ae5bf5b08"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

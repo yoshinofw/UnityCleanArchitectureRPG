@@ -1,0 +1,19 @@
+{
+    "name": "UCARPG.View.ActorComponent",
+    "rootNamespace": "UCARPG.View.ActorComponent",
+    "references": [
+        "GUID:c8e4b2b92bf3df24cb9fc115fdc25f5e",
+        "GUID:aeebd7f3d948b414e802b06a0aa701bd",
+        "GUID:c0c0276c3dc428b40b00a23139571fb8",
+        "GUID:0948a825c61934248a26878fe7a4fffd"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

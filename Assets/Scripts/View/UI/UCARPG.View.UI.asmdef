@@ -1,0 +1,18 @@
+{
+    "name": "UCARPG.View.UI",
+    "rootNamespace": "UCARPG.View.UI",
+    "references": [
+        "GUID:c8e4b2b92bf3df24cb9fc115fdc25f5e",
+        "GUID:4d0f44c749168944a8b20d8c927aa0ee",
+        "GUID:c0c0276c3dc428b40b00a23139571fb8"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

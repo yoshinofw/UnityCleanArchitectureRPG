@@ -1,0 +1,17 @@
+{
+    "name": "UCARPG.View.Input",
+    "rootNamespace": "UCARPG.View.Input",
+    "references": [
+        "GUID:75469ad4d38634e559750d17036d5f7c",
+        "GUID:c8e4b2b92bf3df24cb9fc115fdc25f5e"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

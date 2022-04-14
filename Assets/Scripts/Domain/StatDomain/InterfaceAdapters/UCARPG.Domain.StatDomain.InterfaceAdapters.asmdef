@@ -1,0 +1,16 @@
+{
+    "name": "UCARPG.Domain.StatDomain.InterfaceAdapters",
+    "rootNamespace": "UCARPG.Domain.StatDomain.InterfaceAdapters",
+    "references": [
+        "GUID:24e42c781c16dfe478451d6de8b6b4b2"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

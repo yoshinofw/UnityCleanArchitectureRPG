@@ -1,0 +1,16 @@
+{
+    "name": "UCARPG.Utilities",
+    "rootNamespace": "UCARPG.Utilities",
+    "references": [
+        "GUID:39e13b4a4f475ce409d2c2da39ee56c2"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

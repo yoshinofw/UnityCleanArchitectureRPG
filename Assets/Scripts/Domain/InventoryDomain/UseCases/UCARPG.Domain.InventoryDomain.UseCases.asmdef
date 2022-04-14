@@ -1,0 +1,17 @@
+{
+    "name": "UCARPG.Domain.InventoryDomain.UseCases",
+    "rootNamespace": "UCARPG.Domain.InventoryDomain.UseCases",
+    "references": [
+        "GUID:39e13b4a4f475ce409d2c2da39ee56c2",
+        "GUID:554580d9c8595314db0d9cf836780413"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

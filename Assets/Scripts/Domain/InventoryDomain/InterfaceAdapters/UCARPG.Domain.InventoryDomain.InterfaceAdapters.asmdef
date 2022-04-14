@@ -1,0 +1,16 @@
+{
+    "name": "UCARPG.Domain.InventoryDomain.InterfaceAdapters",
+    "rootNamespace": "UCARPG.Domain.InventoryDomain.InterfaceAdapters",
+    "references": [
+        "GUID:47bf9bb5c79ed8649a2d55ea2aee4952"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

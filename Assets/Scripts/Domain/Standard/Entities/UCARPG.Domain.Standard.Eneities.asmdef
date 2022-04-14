@@ -1,0 +1,14 @@
+{
+    "name": "UCARPG.Domain.Standard.Eneities",
+    "rootNamespace": "UCARPG.Domain.Standard.Eneities",
+    "references": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,0 +1,16 @@
+{
+    "name": "UCARPG.View.Item",
+    "rootNamespace": "UCARPG.View.Item",
+    "references": [
+        "GUID:c8e4b2b92bf3df24cb9fc115fdc25f5e"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,0 +1,9 @@
+/.vscode/
+/[Ll]ibrary/
+/[Ll]ogs/
+/[Oo]bj/
+/[Tt]emp/
+/[Uu]ser[Ss]ettings/
+/Assets/Elements
+*.csproj
+*.sln

@@ -1,0 +1,105 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bf5b42119a34e54b9a0ebf8fa0023c3, type: 3}
+  m_Name: ItemConfigOverView
+  m_EditorClassIdentifier: 
+  _weaponConfigs:
+  - _id: Fist
+    _icon: {fileID: 0}
+    _type: 
+    _capacity: 0
+    _prefab: {fileID: 4066772555555508991, guid: 3ff70e2a589ca1f43a7ad763b8ce7606, type: 3}
+    _runtimeAnimatorController: {fileID: 9100000, guid: 9c2586f059168ab4ab088fa3a75796c3, type: 2}
+    _healthDamage: 5
+    _poiseDamage: 1
+  - _id: Dagger
+    _icon: {fileID: 21300000, guid: 26c9205dbdd8c0e41a6da96b9f354e02, type: 3}
+    _type: Weapon
+    _capacity: 1
+    _prefab: {fileID: 4266278421357943940, guid: 0d6d3a179be0b4941a49b5824dcb0641, type: 3}
+    _runtimeAnimatorController: {fileID: 22100000, guid: b3c1a6b21d20f2a4c9b72557513ee9b8, type: 2}
+    _healthDamage: 50
+    _poiseDamage: 30
+  - _id: Spear
+    _icon: {fileID: 21300000, guid: 7b8112d688ac51a4290f693477047f45, type: 3}
+    _type: Weapon
+    _capacity: 1
+    _prefab: {fileID: 6301082559646988798, guid: 1c3c78229af35b043969d0a84e796b5e, type: 3}
+    _runtimeAnimatorController: {fileID: 22100000, guid: 7998a35868222c04f9eaf146abba5e5b, type: 2}
+    _healthDamage: 80
+    _poiseDamage: 100
+  - _id: Sword
+    _icon: {fileID: 21300000, guid: 146c425541d467145860862fd4bd58b4, type: 3}
+    _type: Weapon
+    _capacity: 1
+    _prefab: {fileID: 325368497357170851, guid: 5060dc0df9d85464788da4c31b20238c, type: 3}
+    _runtimeAnimatorController: {fileID: 22100000, guid: c91403755ee74f540b08ea86fdc34e3f, type: 2}
+    _healthDamage: 100
+    _poiseDamage: 60
+  - _id: Axe
+    _icon: {fileID: 0}
+    _type: 
+    _capacity: 0
+    _prefab: {fileID: 1608955433007110814, guid: f5007e293ff62cb4096d13f0ad08a0a5, type: 3}
+    _runtimeAnimatorController: {fileID: 22100000, guid: ec77767bc7653ba428255f9a0a172c6a, type: 2}
+    _healthDamage: 120
+    _poiseDamage: 120
+  - _id: GreatSword
+    _icon: {fileID: 0}
+    _type: 
+    _capacity: 0
+    _prefab: {fileID: 947709286638768603, guid: 59562cd3277caf846a470b1176889178, type: 3}
+    _runtimeAnimatorController: {fileID: 22100000, guid: de5c558a62e467b4b84b94bc92f7ecc7, type: 2}
+    _healthDamage: 200
+    _poiseDamage: 200
+  _magicConfigs:
+  - _id: MagicBullet
+    _icon: {fileID: 21300000, guid: 7b51335680a9b6049812d7fb5af9d0c7, type: 3}
+    _type: Magic
+    _capacity: 1
+    _prefab: {fileID: 3078417234397271020, guid: 01bcd2d335cd89e4287ab8e3b4051353, type: 3}
+    _manaCost: 25
+    _healthDamage: 150
+    _poiseDamage: 90
+  - _id: Fireball
+    _icon: {fileID: 21300000, guid: 551b29806dd367f448d7bfedbcd3fb39, type: 3}
+    _type: Magic
+    _capacity: 1
+    _prefab: {fileID: 3078417234397271020, guid: 2e0f46211f04c58489db4eff1b65b95f, type: 3}
+    _manaCost: 50
+    _healthDamage: 200
+    _poiseDamage: 250
+  _consumableConfigs:
+  - _id: HealthPotion
+    _icon: {fileID: 21300000, guid: 9434844885d9e7c4596e404d8cbd5da1, type: 3}
+    _type: Consumable
+    _capacity: 10
+    _modifyStatType: Health
+    _modifier: 100
+  - _id: HealthPotion+
+    _icon: {fileID: 21300000, guid: 9ee0f973362be864caf7c0b09ec7fe4a, type: 3}
+    _type: Consumable
+    _capacity: 5
+    _modifyStatType: Health
+    _modifier: 500
+  - _id: ManaPotion
+    _icon: {fileID: 21300000, guid: e5d073ad9c76f7d4db08fa0a57590d00, type: 3}
+    _type: Consumable
+    _capacity: 10
+    _modifyStatType: Mana
+    _modifier: 50
+  - _id: ManaPotion+
+    _icon: {fileID: 21300000, guid: 2752755a0d27afb4795f08cf1415bc3d, type: 3}
+    _type: Consumable
+    _capacity: 5
+    _modifyStatType: Mana
+    _modifier: 100

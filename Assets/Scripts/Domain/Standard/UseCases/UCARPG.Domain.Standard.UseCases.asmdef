@@ -1,0 +1,14 @@
+{
+    "name": "UCARPG.Domain.Standard.UseCases",
+    "rootNamespace": "UCARPG.Domain.Standard.UseCases",
+    "references": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
