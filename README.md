@@ -22,6 +22,14 @@
 
 ※因為有使用付費素材所以Assets/Elements資料夾內檔案並無上傳，專案內部分檔案設定會有遺失
 
+https://user-images.githubusercontent.com/88575300/163971345-349e1a14-c533-414b-91a9-27a036afc60b.mp4
+
+https://user-images.githubusercontent.com/88575300/163971488-6577b7dc-7240-45cd-8905-ef4487acd7be.mp4
+
+https://user-images.githubusercontent.com/88575300/163971593-101b0d72-3086-4990-b961-27eff46e8700.mp4
+
+https://user-images.githubusercontent.com/88575300/163971673-a029f521-705c-4859-a437-0555842d662b.mp4
+
 操作說明: 
 
 |功能|鼠鍵|手把|備註|
