@@ -3,8 +3,8 @@
 - [專案簡介](#專案簡介)
 - [系統架構](#系統架構)
 - [功能細節](#功能細節)
-    - [角色](#角色)
-    - [支援物件](#支援物件)
+    - [角色(資料編輯、位置佈署、動作控制、攻擊判定)](#角色)
+    - [支援物件(EventBus、ObjectPool)](#支援物件)
 - [素材來源](#素材來源)
 
 ## 專案簡介
@@ -12,8 +12,8 @@
 一個以Unity套用整潔架構來開發的動作RPG，內容為一個可供探索的地城並以擊敗Boss作為遊戲的結束，包含以下功能:
 - 動作: 移動、奔跑、攻擊、翻滾、施放技能、使用道具、撿取物品
 - 背包: 儲存武器、魔法、道具等物品並提供裝備、卸除、丟棄等功能
-- 敵人: 預設行為會在特定路徑上巡邏，當玩家進入偵測範圍時開始追逐與攻擊
-- 能力值
+- 敵人: 會在特定路徑上巡邏，當玩家進入偵測範圍時開始追逐與攻擊
+- 能力值:
     - 血量: 降低至0會死亡，玩家的情況會在起點復活；敵人則會消失並留下掉落物
     - 韌性: 降低至0會產生受擊反應並將數值重設
     - 魔力: 使用技能時需要的資源
@@ -77,13 +77,13 @@
     <img src="Docs/PlayerSpawner.gif" width="49%" hspace="0.5%"><img src="Docs/EnemyPatrolPath.gif" width="49%" hspace="0.5%">
     <img src="Docs/ActorSpawner.png" width="49%" hspace="0.5%" align="top"><img src="Docs/ActorPatrolPath.png" width="49%" hspace="0.5%">
 
-    ActorSpawner可以設定要配置的角色的Id，在執行時透過EventBus傳送事件給ActorController來建立角色。而ActorPatrolPath是在ActorSpawner的基礎上增加編輯AI巡邏路線的功能。
+    ActorSpawner可以設定要配置的角色的Id，在執行時透過EventBus傳送事件給ActorController來建立角色。而ActorPatrolPath則是在ActorSpawner的基礎上增加編輯AI巡邏路線的功能。
 
 - 動作控制
 
     <img src="Docs/InputActions.png" width="50%"><img src="Docs/EnemyAIClassDiagram.png" width="50%" align="top">
     
-    首先是控制的輸入，玩家側使用Unity新式的InputSystem，PlayerInput組件在有輸入操作時會引發C#Event，藉此取得輸入；敵人側則是用State Pattern設計一個簡易的AI來控制。
+    首先是控制的輸入，玩家側使用Unity新式的InputSystem，PlayerInput組件在有輸入操作時會引發C# Event，藉此取得輸入；敵人側則是用State Pattern設計一個簡易的AI來控制。
 
     <img src="Docs/MotionPerformer.png" width="49%" hspace="0.5%" align="top"><img src="Docs/Animator.png" width="49%" hspace="0.5%">
     <img src="Docs/Animator_Locomotion.png" width="49%" hspace="0.5%" align="top"><img src="Docs/Animator_Cast.png" width="49%" hspace="0.5%">
@@ -98,11 +98,13 @@
 
     ![](Docs/HitDetect.gif)
 
-    偵測的作法是紀錄Hitbox六個面的中心點，從第二次更新開始能形成六道Raycast，這樣連續的更新就能形成一個完整的軌跡，一旦有擊中對應Layer的GameObject就會發送事件做傷害處理。
+    偵測的作法是紀錄Hitbox六個面的中心點，從第二次更新開始能形成六道Raycast，這樣連續的更新就能形成一個完整的軌跡，一旦有擊中對應Layer的GameObject就會發送事件做傷害處理。這個做法會有可能略過Collider太小的目標的缺點，但花費會比BoxCast小，可評估精度、花費的需求來做選擇。
 
 ### 支援物件
 
 - EventBus
+
+    提供註冊與發送事件的功能，原本ClassA調用ClassB的情況可以做些調整，改為將ClassB的某方法註冊在某事件上，ClassA通過發送該事件間接調用ClassB註冊的方法，兩者的依賴關係會變成雙方皆依賴EventBus，這樣的好處在於Domain之間或Domain與View之間可以不須要任何依賴關係就能進行系統間的溝通。
 
     ```
     public class EventBus : IEventPublisher
@@ -144,9 +146,11 @@
     }
     ```
 
-    提供註冊與發送事件的功能，原本ClassA調用ClassB的情況可以做些調整，改為將ClassB的某方法註冊在某事件上，ClassA通過發送該事件間接調用ClassB註冊的方法，兩者的依賴關係會變為雙方皆依賴EventBus，這樣做的好處在於Domain之間或Domain與View之間可以不須要任何依賴關係就能進行系統間的溝通。
-
 - ObjectPool
+
+    物件池產生的實體在職責結束後會返回池內等待下次調用，以重複利用的方式來避免需要產生新的實例。需要大量使用的物件能利用此特性解決執行時因為GameObject.Instantiate造成的性能問題，也能將物件產生的職責交由物件池負責，客戶端只需要調用即可。
+
+    以這個專案來講AudioManager就是個例子，當有音效事件觸發時AudioManager就會需要產生一個AudioSource到指定位置進行撥放，遊戲中複數角色的腳步聲或者UI的操作就會產生大量需求。這時設計一個SoundEmitter(繼承RecyclableObject的Class)並提供設定AudioSource的方法就能套用物件池來滿足需求。
 
     ```
     public class ObjectPool<T> where T : RecyclableObject
@@ -195,10 +199,6 @@
         }
     }
     ```
-
-    物件池產生的實體在職責結束後會返回池內等待下次調用，以重複利用的方式來避免需要產生新的實例。遊戲內需要大量使用的物件就能利用物件池來解決執行時因為GameObject.Instantiate造成的性能問題，也能將物件產生的職責交由物件池負責，客戶端只需要調用即可。
-
-    以這個專案來講AudioManager就是個例子，當有音效事件觸發時AudioManager就會需要產生一個AudioSource到指定位置進行撥放，遊戲中複數角色的腳步聲或者UI的操作就會產生大量需求。這時設計一個SoundEmitter(繼承RecyclableObject的Class)並提供設定AudioSource的方法就能套用物件池來滿足需求。
 
 ## 素材來源
 
