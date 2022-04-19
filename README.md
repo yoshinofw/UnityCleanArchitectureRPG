@@ -22,11 +22,6 @@
 
 ※因為有使用付費素材所以Assets/Elements資料夾內檔案並無上傳，專案內部分檔案設定會有遺失
 
-![](Docs/SwordDemo.gif)
-![](Docs/MagicDemo.gif)
-![](Docs/Pickup.gif)
-![](Docs/Inventory.gif)
-
 操作說明: 
 
 |功能|鼠鍵|手把|備註|
